@@ -1,8 +1,8 @@
 package domin
 
 import (
-	initiator "NBA-master/src/init"
-	"NBA-master/src/model"
+	initiator "NBA-master/init"
+	"NBA-master/model"
 	"fmt"
 
 	"github.com/PuerkitoBio/goquery"
@@ -23,7 +23,9 @@ func PlayerDataPhase(doc *goquery.Document) error {
 		Player.Session = s.Find("td").Eq(10).Text()
 		Player.Time = s.Find("td").Eq(11).Text()
 		fmt.Printf("Review %d：--%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", i, Player.Name, Player.Team, Player.Source, Player.Shot, Player.Hitrate, Player.Threeshot, Player.Threerate, Player.Penaltyshot, Player.Penaltyrate, Player.Session, Player.Time)
-		initiator.POSTGRES.Create(&Player)
+		if Player.Name != "" {
+			initiator.POSTGRES.Create(&Player)
+		}
 	})
 	return nil
 }

@@ -1,8 +1,8 @@
 package domin
 
 import (
-	initiator "NBA-master/src/init"
-	"NBA-master/src/model"
+	initiator "NBA-master/init"
+	"NBA-master/model"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -15,7 +15,7 @@ func TeamPhase(doc *goquery.Document) error {
 		Teamer.Defeat = s.Find("td").Eq(3).Text()
 		Teamer.Winrate = s.Find("td").Eq(4).Text()
 		Teamer.Differencewins = s.Find("td").Eq(5).Text()
-		Teamer.Homae_field = s.Find("td").Eq(6).Text()
+		Teamer.Home_field = s.Find("td").Eq(6).Text()
 		Teamer.Visiting_field = s.Find("td").Eq(7).Text()
 		Teamer.Division = s.Find("td").Eq(8).Text()
 		Teamer.East = s.Find("td").Eq(9).Text()
@@ -23,8 +23,9 @@ func TeamPhase(doc *goquery.Document) error {
 		Teamer.Lose_point = s.Find("td").Eq(11).Text()
 		Teamer.Net_victory = s.Find("td").Eq(12).Text()
 		Teamer.WL_streak = s.Find("td").Eq(13).Text()
-
-		initiator.POSTGRES.Create(&Teamer)
+		if Teamer.Team != "" {
+			initiator.POSTGRES.Create(&Teamer)
+		}
 	})
 	return nil
 }

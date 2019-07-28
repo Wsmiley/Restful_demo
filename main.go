@@ -1,11 +1,11 @@
 package main
 
 import (
-	"NBA-master/src/config"
-	"NBA-master/src/domin"
-	"NBA-master/src/download"
-	initiator "NBA-master/src/init"
-	"NBA-master/src/model"
+	"NBA-master/config"
+	"NBA-master/domin"
+	"NBA-master/download"
+	initiator "NBA-master/init"
+	"NBA-master/model"
 	"fmt"
 	"strconv"
 )
