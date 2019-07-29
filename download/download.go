@@ -8,6 +8,7 @@ import (
 )
 
 func Downloder(url string) (*goquery.Document, error) {
+
 	res, err := http.Get(url)
 	if err != nil {
 		return nil, err

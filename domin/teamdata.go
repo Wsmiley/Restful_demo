@@ -8,6 +8,7 @@ import (
 )
 
 func TeamPhase(doc *goquery.Document) error {
+
 	doc.Find(".players_table tr.color_font1.bg_a~tr").Each(func(i int, s *goquery.Selection) {
 		var Teamer model.TeamRanking
 		Teamer.Team = s.Find(".left a").Text()

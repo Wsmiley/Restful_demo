@@ -9,6 +9,7 @@ import (
 )
 
 func PlayerDataPhase(doc *goquery.Document) error {
+
 	doc.Find(".players_table tr").Each(func(i int, s *goquery.Selection) {
 		var Player model.Playerdata
 		Player.Name = s.Find(".left a").Text()

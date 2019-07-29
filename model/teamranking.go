@@ -1,6 +1,13 @@
 package model
 
+import (
+	"time"
+
+	"github.com/jinzhu/gorm"
+)
+
 type TeamRanking struct {
+	gorm.Model
 	Team           string `gorm:"unique;not null"`
 	Win            string
 	Defeat         string
@@ -14,6 +21,48 @@ type TeamRanking struct {
 	Lose_point     string
 	Net_victory    string
 	WL_streak      string
+}
+
+type TeamRankingSerializer struct {
+	ID             uint       `json:"id"`
+	CreateAt       time.Time  `json:"create_at"`
+	UpdateAt       time.Time  `json:"update_at"`
+	DeleteAt       *time.Time `json:"delete_at"`
+	Team           string     `json:"team"`
+	Win            string     `json:"win"`
+	Defeat         string     `json:"defeat"`
+	Winrate        string     `json:"winrate"`
+	Differencewins string     `json:"diffencewins"`
+	Home_field     string     `json:"home_field"`
+	Visiting_field string     `json:"visiting_field"`
+	Division       string     `json:"division"`
+	East           string     `json:"east"`
+	Point          string     `json:"point"`
+	Lose_point     string     `json:"lose_point"`
+	Net_victory    string     `json:"net_victory"`
+	WL_streak      string     `json:"wl_streak"`
+}
+
+func (t *TeamRanking) Serializer() TeamRankingSerializer {
+	return TeamRankingSerializer{
+		ID:             t.ID,
+		CreateAt:       t.CreatedAt,
+		UpdateAt:       t.UpdatedAt,
+		DeleteAt:       t.DeletedAt,
+		Team:           t.Team,
+		Win:            t.Win,
+		Defeat:         t.Defeat,
+		Winrate:        t.Winrate,
+		Differencewins: t.Differencewins,
+		Home_field:     t.Home_field,
+		Visiting_field: t.Visiting_field,
+		Division:       t.Division,
+		East:           t.East,
+		Point:          t.Point,
+		Lose_point:     t.Lose_point,
+		Net_victory:    t.Net_victory,
+		WL_streak:      t.WL_streak,
+	}
 }
 
 // type TeamRanking struct {

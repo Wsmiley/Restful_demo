@@ -11,10 +11,28 @@
 			"revision": ""
 		},
 		{
+			"checksumSHA1": "E4N+VMxqLnEkvgR9/515UrH2NEA=",
+			"path": "github.com/KyleBanks/depth",
+			"revision": "b7f67b6d8d5f169cc58aa195df333dc0b353d6b3",
+			"revisionTime": "2019-07-19T14:55:26Z"
+		},
+		{
 			"checksumSHA1": "rXqzjkfStc6C8d7DDOXrmAv/fH8=",
 			"path": "github.com/PuerkitoBio/goquery",
 			"revision": "3dcf72e6c17f694381a21592651ca1464ded0e10",
 			"revisionTime": "2019-01-09T23:07:04Z"
+		},
+		{
+			"checksumSHA1": "25yisqnH+P8Ghl7OUmRYQARwaEY=",
+			"path": "github.com/PuerkitoBio/purell",
+			"revision": "44968752391892e1b0d0b821ee79e9a85fa13049",
+			"revisionTime": "2019-02-16T21:19:35Z"
+		},
+		{
+			"checksumSHA1": "h7fUPByg4oy4ehKzStKy5vr5PUk=",
+			"path": "github.com/PuerkitoBio/urlesc",
+			"revision": "de5bf2ad457846296e2031421a34e2568e304e35",
+			"revisionTime": "2017-08-10T14:37:23Z"
 		},
 		{
 			"checksumSHA1": "RIh1dcM7jKzdb/ZNYrKn9SaIaCw=",
@@ -27,6 +45,12 @@
 			"path": "github.com/fsnotify/fsnotify",
 			"revision": "1485a34d5d5723fea214f5710708e19a831720e4",
 			"revisionTime": "2019-03-12T18:14:46Z"
+		},
+		{
+			"checksumSHA1": "/NB9AGM1V8sJpHoVtRc47O5F9CQ=",
+			"path": "github.com/ghodss/yaml",
+			"revision": "25d852aebe32c875e9c044af3eef9c7dc6bc777f",
+			"revisionTime": "2019-02-12T21:16:48Z"
 		},
 		{
 			"checksumSHA1": "mKall8xfKBPL/a5Ji//i968rLsY=",
@@ -65,6 +89,30 @@
 			"revisionTime": "2018-08-14T08:58:52Z",
 			"version": "v1.3",
 			"versionExact": "v1.3.0"
+		},
+		{
+			"checksumSHA1": "v/B2EqC4VEbsJgKhEnS+tEagfZc=",
+			"path": "github.com/go-openapi/jsonpointer",
+			"revision": "a105a905c5e6ad147f08504784917f3e178e0ba5",
+			"revisionTime": "2019-06-16T18:29:28Z"
+		},
+		{
+			"checksumSHA1": "UjWdNorUCzkadXpaFMpcwY0YK/k=",
+			"path": "github.com/go-openapi/jsonreference",
+			"revision": "2903bfd4bfbaf188694f1edf731f2725a8fa344f",
+			"revisionTime": "2019-06-16T18:31:39Z"
+		},
+		{
+			"checksumSHA1": "L/Vj3pI8Le0E5GaV1E5sPHedZnU=",
+			"path": "github.com/go-openapi/spec",
+			"revision": "bdfd7e07daecc404d77868a88b2364d0aed0ee5a",
+			"revisionTime": "2019-06-16T18:34:40Z"
+		},
+		{
+			"checksumSHA1": "7O4UXAHoVIus/ZZM9YwPVXbrErk=",
+			"path": "github.com/go-openapi/swag",
+			"revision": "de649ffb9e02183a414820c5b1b4582f7b009792",
+			"revisionTime": "2019-07-04T17:18:12Z"
 		},
 		{
 			"checksumSHA1": "NPJIM7sd6BEGbQ/NkraNftcRXj8=",
@@ -157,6 +205,24 @@
 			"revisionTime": "2019-05-10T14:34:07Z"
 		},
 		{
+			"checksumSHA1": "euMY7SmXXGeDit90eC8FPzDT1SU=",
+			"path": "github.com/mailru/easyjson/buffer",
+			"revision": "b2ccc519800e761ac8000b95e5d57c80a897ff9e",
+			"revisionTime": "2019-06-26T09:21:58Z"
+		},
+		{
+			"checksumSHA1": "qWdnMyl4kxzKiCqcQwQPnhEWuNU=",
+			"path": "github.com/mailru/easyjson/jlexer",
+			"revision": "b2ccc519800e761ac8000b95e5d57c80a897ff9e",
+			"revisionTime": "2019-06-26T09:21:58Z"
+		},
+		{
+			"checksumSHA1": "8uahZmmPJqtj80oEIRELmEF8DSE=",
+			"path": "github.com/mailru/easyjson/jwriter",
+			"revision": "b2ccc519800e761ac8000b95e5d57c80a897ff9e",
+			"revisionTime": "2019-06-26T09:21:58Z"
+		},
+		{
 			"checksumSHA1": "p/g8QEmoH6/jBQNFU0q2P9NcNKI=",
 			"path": "github.com/mattn/go-isatty",
 			"revision": "da60ac76bf7019a8b005f8dd1ad9d1a0e6434155",
@@ -185,6 +251,12 @@
 			"path": "github.com/pelletier/go-toml",
 			"revision": "84da2c4a25c585816f2c4211b699228d111d18ab",
 			"revisionTime": "2019-07-25T07:06:17Z"
+		},
+		{
+			"checksumSHA1": "CUU7ZZtxuc1mpbM8XKrSTNiy/yM=",
+			"path": "github.com/pkg/errors",
+			"revision": "27936f6d90f9c8e1145f11ed52ffffbfdb9e0af7",
+			"revisionTime": "2019-02-27T00:00:51Z"
 		},
 		{
 			"checksumSHA1": "c8iTmaJDIg/GXEaTwpGPSEuB7gI=",
@@ -229,17 +301,65 @@
 			"revisionTime": "2018-06-05T02:01:30Z"
 		},
 		{
+			"checksumSHA1": "IP3DX7lU+yn8Xm2G7lHURisG0Yk=",
+			"path": "github.com/swaggo/gin-swagger",
+			"revision": "d488a692749fd254a12d1d1326caa3419953e82d",
+			"revisionTime": "2019-07-17T07:42:06Z"
+		},
+		{
+			"checksumSHA1": "XDluIz8fsqZBKH5Iz44/bc297QQ=",
+			"path": "github.com/swaggo/gin-swagger/swaggerFiles",
+			"revision": "d488a692749fd254a12d1d1326caa3419953e82d",
+			"revisionTime": "2019-07-17T07:42:06Z"
+		},
+		{
+			"checksumSHA1": "5yW6sHOHhiYqZDyPzkgbD03CBbE=",
+			"path": "github.com/swaggo/swag",
+			"revision": "c19280e76fac72a09e9730a4b3c9ae3e144d9b3a",
+			"revisionTime": "2019-07-26T03:13:51Z"
+		},
+		{
+			"checksumSHA1": "8s8Ozy9aFBVQeluWMU+08LOSzmk=",
+			"path": "github.com/swaggo/swag/cmd/swag",
+			"revision": "c19280e76fac72a09e9730a4b3c9ae3e144d9b3a",
+			"revisionTime": "2019-07-26T03:13:51Z"
+		},
+		{
+			"checksumSHA1": "WSejvOmIEYQelumk8NsKZPvRarw=",
+			"path": "github.com/swaggo/swag/gen",
+			"revision": "c19280e76fac72a09e9730a4b3c9ae3e144d9b3a",
+			"revisionTime": "2019-07-26T03:13:51Z"
+		},
+		{
 			"checksumSHA1": "oQxNMXzmMrt6S9kD0aGZ4wyQEpg=",
 			"path": "github.com/ugorji/go/codec",
 			"revision": "e118e2d506a6b252f6b85f2e2f2ac1bfed82f1b8",
 			"revisionTime": "2019-07-23T09:17:30Z"
 		},
 		{
+			"checksumSHA1": "6wptvIsZzlPPv6CNy/FeKAcpM+c=",
+			"path": "github.com/urfave/cli",
+			"revision": "693af58b4d51b8fcc7f9d89576da170765980581",
+			"revisionTime": "2019-02-03T18:40:40Z"
+		},
+		{
 			"path": "go",
 			"revision": ""
 		},
 		{
+			"path": "golang.org/x/net/context",
+			"revision": ""
+		},
+		{
 			"path": "golang.org/x/net/html",
+			"revision": ""
+		},
+		{
+			"path": "golang.org/x/net/idna",
+			"revision": ""
+		},
+		{
+			"path": "golang.org/x/net/webdav",
 			"revision": ""
 		},
 		{
@@ -252,6 +372,14 @@
 		},
 		{
 			"path": "golang.org/x/text/unicode/norm",
+			"revision": ""
+		},
+		{
+			"path": "golang.org/x/text/width",
+			"revision": ""
+		},
+		{
+			"path": "golang.org/x/tools/go/loader",
 			"revision": ""
 		},
 		{

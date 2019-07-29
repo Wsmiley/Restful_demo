@@ -1,19 +1,22 @@
 package main
 
 import (
+	"NBA-master/api_server"
 	"NBA-master/config"
 	"NBA-master/domin"
 	"NBA-master/download"
 	initiator "NBA-master/init"
 	"NBA-master/model"
-	"fmt"
 	"strconv"
 )
 
 func main() {
 	StartTable()
+	defer initiator.POSTGRES.Close()
+
 	PushDataIntoDB()
-	fmt.Println("end")
+
+	api_server.New().Start()
 }
 
 func StartTable() {

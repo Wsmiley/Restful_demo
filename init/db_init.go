@@ -13,8 +13,7 @@ func init() {
 	db, err := gorm.Open("postgres", "host=localhost user=postgres dbname=postgres sslmode=disable password=weili")
 	if err != nil {
 		panic("连接数据库失败")
-	} else {
-		fmt.Println("connect database")
 	}
+	fmt.Println("connect database")
 	POSTGRES = db
 }
