@@ -8,7 +8,6 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-
 )
 
 var (
@@ -16,6 +15,14 @@ var (
 	ErrorPlayerParam = errors.New("player param is not correct")
 )
 
+// TeamListHandler will list  the player
+// @Summaery List player
+// @Tags Players
+// @Accept json
+// @Router /players/{id} [get][get]
+// @Produce  json
+// @Param playerID path string true "player id"
+// @Success 200 {object} model.PlayerdataSerializer
 func ShowPlayersHandler(c *gin.Context) {
 	id := c.Param("playerID")
 
@@ -32,13 +39,13 @@ func ShowPlayersHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, player.Serializer())
 }
 
-type ListPlayerParm struct {
-	Search string `form:"search"`
-	Return string `form:"return"`
-	Team   string `form:"team"`
-	Name   string `form:"name"`
-}
-
+// TeamListHandler will list all the players
+// @Summaery List players
+// @Accept json
+// @Tags Players
+// @Router /players/ [get]
+// @Produce  json
+// @Success 200 {object} model.PlayerdataSerializer
 func ShowAllPlayersHandler(c *gin.Context) {
 
 	var players []model.Playerdata

@@ -1,0 +1,151 @@
+basePath: /v1/api
+definitions:
+  model.PlayerdataSerializer:
+    properties:
+      create_at:
+        type: string
+      delete_at:
+        type: string
+      hitrate:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      penaltyrate:
+        type: string
+      penaltyshot:
+        type: string
+      session:
+        type: string
+      shot:
+        type: string
+      source:
+        type: string
+      team:
+        type: string
+      threerate:
+        type: string
+      threeshot:
+        type: string
+      time:
+        type: string
+      update_at:
+        type: string
+    type: object
+  model.TeamRankingSerializer:
+    properties:
+      create_at:
+        type: string
+      defeat:
+        type: string
+      delete_at:
+        type: string
+      diffencewins:
+        type: string
+      division:
+        type: string
+      east:
+        type: string
+      home_field:
+        type: string
+      id:
+        type: integer
+      lose_point:
+        type: string
+      net_victory:
+        type: string
+      point:
+        type: string
+      team:
+        type: string
+      update_at:
+        type: string
+      visiting_field:
+        type: string
+      win:
+        type: string
+      winrate:
+        type: string
+      wl_streak:
+        type: string
+    type: object
+host: 127.0.0.1:5000
+info:
+  contact:
+    email: wsmiley29@gmail.com
+    name: API Support
+  description: This is a server for NBA-data.
+  license: {}
+  title: NBA-data API Demo
+  version: "1.0"
+paths:
+  /players/:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.PlayerdataSerializer'
+      tags:
+      - Players
+  /players/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: player id
+        in: path
+        name: playerID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.PlayerdataSerializer'
+      tags:
+      - Players
+  /teams/:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.TeamRankingSerializer'
+      security:
+      - Bearer: []
+      tags:
+      - teams
+  /teams/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: team id
+        in: path
+        name: teamID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.TeamRankingSerializer'
+      security:
+      - Bearer: []
+      tags:
+      - teams
+swagger: "2.0"

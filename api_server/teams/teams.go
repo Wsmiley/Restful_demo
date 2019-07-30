@@ -10,16 +10,18 @@ import (
 )
 
 var (
-	ErrorTeam      = errors.New("not found record")
-	ErrorTeamId    = errors.New("id is not allow")
-	ErrorTeamParam = errors.New("list team param error")
+	ErrorTeam   = errors.New("not found record")
+	ErrorTeamId = errors.New("id is not allow")
 )
 
-type ListTeamParam struct {
-	Search string `form:"search"`
-	Return string `form:"return"`
-}
-
+// TeamListHandler will list all the teams
+// @Summaery List Team
+// @Accept json
+// @Tags teams
+// @Security Bearer
+// @Router /teams/ [get]
+// @Produce  json
+// @Success 200 {object} model.TeamRankingSerializer
 func TeamListHandler(c *gin.Context) {
 	var teams []model.TeamRanking
 	initiator.POSTGRES.Find(&teams)
@@ -28,8 +30,17 @@ func TeamListHandler(c *gin.Context) {
 		result[index] = team.Serializer()
 	}
 	c.JSON(200, result)
-
 }
+
+// TeamListHandler will list  the team
+// @Summaery List Team
+// @Accept json
+// @Tags teams
+// @Security Bearer
+// @Router /teams/{id} [get]
+// @Produce  json
+// @Param teamID path string true "team id"
+// @Success 200 {object} model.TeamRankingSerializer
 func TeamHandler(c *gin.Context) {
 	id := c.Param("teamID")
 

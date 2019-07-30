@@ -12,8 +12,8 @@ var POSTGRES *gorm.DB
 func init() {
 	db, err := gorm.Open("postgres", "host=localhost user=postgres dbname=postgres sslmode=disable password=weili")
 	if err != nil {
-		panic("连接数据库失败")
+		panic("Database connection failed")
 	}
-	fmt.Println("connect database")
+	fmt.Println("Database connection success")
 	POSTGRES = db
 }

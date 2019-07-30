@@ -35,6 +35,18 @@
 			"revisionTime": "2017-08-10T14:37:23Z"
 		},
 		{
+			"checksumSHA1": "GMZkEYluRh1pZxi3q6jMhRqWJTg=",
+			"path": "github.com/alecthomas/template",
+			"revision": "fb15b899a75114aa79cc930e33c46b577cc664b1",
+			"revisionTime": "2019-07-18T01:26:54Z"
+		},
+		{
+			"checksumSHA1": "j258GVxrs5Kv6o9lwUbK+KOgcNY=",
+			"path": "github.com/alecthomas/template/parse",
+			"revision": "fb15b899a75114aa79cc930e33c46b577cc664b1",
+			"revisionTime": "2019-07-18T01:26:54Z"
+		},
+		{
 			"checksumSHA1": "RIh1dcM7jKzdb/ZNYrKn9SaIaCw=",
 			"path": "github.com/andybalholm/cascadia",
 			"revision": "680b6a57bda4f657485ad44bdea42342ead737bc",
